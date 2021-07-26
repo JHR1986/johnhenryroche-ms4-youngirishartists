@@ -8,13 +8,25 @@
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="artworks-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Artworks
+                All Artworks
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+            <div class="dropdown-menu border-0" aria-labelledby="artworks-link">
                 <a href="" class="dropdown-item">By Price</a>
                 <a href="" class="dropdown-item ">By Rating</a>
                 <a href="" class="dropdown-item ">By Category</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="type-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Types of Art
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="type-link">
+                <a href="{% url 'products' %}?category=pop_art" class="dropdown-item">Pop Art</a>
+                <a href="{% url 'products' %}?category=watercolours" class="dropdown-item ">Watercolours</a>
+                <a href="{% url 'products' %}?category=oils" class="dropdown-item ">Oils</a>
+                <a href="{% url 'products' %}?category=pop_art,watercolours,oils" class="dropdown-item">All Types</a>
             </div>
         </li>
 
@@ -29,9 +41,9 @@
                 Deals
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="deals-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=new_arrivals,deals" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
