@@ -3,11 +3,11 @@ html {
 }
 
 body {
-    background: url(#) no-repeat center center fixed;
+    background: url('') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: roboto;
+    font-family: 'Lato';
 }
 
 /* from Bulma */
@@ -15,8 +15,8 @@ body {
     align-items: center;
     display: inline-flex;
     justify-content: center;
-    height: 2rem;
-    width: 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 .logo-font {
@@ -28,14 +28,14 @@ body {
 }
 
 .shop-now-button {
-    background: green;
-    color: grey;
-    min-width: 280px;
+    background: black;
+    color: white;
+    min-width: 260px;
 }
 
 .btn-black {
-    background: red;
-    color: blue;
+    background: black;
+    color: white;
 }
 
 .btn-outline-black {
@@ -58,7 +58,7 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: purple;
+    background: #222;
     color: white;
 }
 
@@ -122,10 +122,10 @@ a.category-badge>span.badge:hover {
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 4px solid transparent;
-    border-right: 4px solid transparent; 
+    border-right: 4px solid transparent;
     border-bottom: 10px solid black;
     position: absolute;
     top: -10px;
@@ -171,7 +171,7 @@ a.category-badge>span.badge:hover {
     overflow-y: auto;
 }
 
-/* --------------------------------- Media queries */
+/* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
