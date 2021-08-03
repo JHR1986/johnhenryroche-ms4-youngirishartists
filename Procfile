@@ -1,1 +1,1 @@
-web: gunicorn johnhenryroche-ms4-youngirishartists.wsgi:application
+web: gunicorn young_irish_artists.wsgi:application
