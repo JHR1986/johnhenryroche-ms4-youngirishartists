@@ -3,6 +3,7 @@ from .models import Artist
 
 # Create your views here.
 
+
 def all_artists(request):
     """ A view to show all artists """
 
