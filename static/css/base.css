@@ -265,6 +265,18 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+/* Jumbotron */
+
+.jumbotron-fluid {
+    background-color: #f5f5f5;
+    color: #013220;
+}
+
+.display-4 {
+    text-align: center;
+    text-decoration: underline;
+}
+
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
