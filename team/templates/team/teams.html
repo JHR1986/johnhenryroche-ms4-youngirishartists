@@ -12,28 +12,21 @@
 {% block content %}
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-8">
-                <h2 class="display-4">About US</h2>
-                <p class="lead">Young Irish Artists is a new Ecommerce website providing young artists based in Ireland
-                    with
-                    a platform to sell prints of their artworks and gain exposure and recognition within the art market.
-                    Check
-                    out the artworks on offer today!
-                </p>
-            </div>
-            <div class="col-lg-4 align-items-center d-flex">
-                <img src="/media/neveragain.jpg" alt="colourful painting" class="img-fluid">
-            </div>
-        </div>
+        <h2 class="display-4">About Us</h2>
+        <p class="lead">Young Irish Artists is a new Ecommerce website providing young artists based in Ireland
+            with
+            a platform to sell prints of their artworks and gain exposure and recognition within the art market.
+            Check
+            out the artworks on offer today!
+        </p>
     </div>
 </div>
 <div class="overlay"></div>
 <div class="container-fluid">
     <div class="row">
-        <div class="col text-center mt-3">
+        <div class="col text-center mt-3 mb-3">
             <h2 class="logo-font">Meet The Team</h2>
-            <hr class="w-50 mb-1">
+            <hr class="w-50 mb-2">
         </div>
     </div>
     <div class="row">
@@ -53,14 +46,14 @@
                         </a>
                         {% endif %}
                         <div class="card-body pb-0">
-                            <p class="mb-0">{{ team.name }}</p>
+                            <p class="lead mb-2 font-weight-bold"><i class="fas fa-user"></i> {{ team.name }}</p>
                         </div>
                         <div class="card-footer bg-white pt-0 border-0 text-left">
                             <div class="row">
                                 <div class="col">
-                                    <p class="lead mb-0 text-left font-weight-bold">{{ team.position }}</p>
-                                    <p class="lead mb-0 text-left font-weight-bold">{{ team.phone }}</p>
-                                    <p class="lead mb-0 text-left font-weight-bold">{{ team.email }}</p>
+                                    <p class="lead mb-0 text-left"><i class="fas fa-briefcase"></i> {{ team.position }}</p>
+                                    <p class="mb-0 text-left"><i class="fas fa-phone-alt"></i> {{ team.phone }}</p>
+                                    <p class="mb-0 text-left"><i class="fas fa-at"></i> {{ team.email }}</p>
                                 </div>
                             </div>
                         </div>
