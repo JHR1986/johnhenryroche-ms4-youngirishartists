@@ -1,9 +1,8 @@
 from django.shortcuts import render
 from .models import Artist
 
-# Create your views here.
 
-
+# View for Artists
 def all_artists(request):
     """ A view to show all artists """
 

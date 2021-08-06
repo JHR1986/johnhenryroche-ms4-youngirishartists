@@ -1,6 +1,7 @@
 from django.db import models
 
 
+# Model for Artists Page
 class Artist(models.Model):
     name = models.CharField(max_length=50)
     education = models.CharField(max_length=254)
