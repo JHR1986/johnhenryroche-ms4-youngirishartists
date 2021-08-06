@@ -21,6 +21,7 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+    color: #013220;
 }
 
 .main-logo-link {
@@ -270,6 +271,10 @@ input[name='q']::placeholder {
 .jumbotron-fluid {
     background-color: #f5f5f5;
     color: #013220;
+}
+
+.card-heading {
+    color: #013220; 
 }
 
 
