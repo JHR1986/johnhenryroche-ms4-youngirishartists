@@ -14,11 +14,15 @@
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
         <h2 class="display-4">The Artists</h2>
-        <p class="lead">Young Irish Artists works with recently graduated art students to provide a 
+        <p class="lead">Young Irish Artists works with recently graduated art students to provide a
             platform through which they can sell prints of their original works to gain greater
             market exposure and recognition in the art world. An overview of the artists that we work with is
             detailed below!
         </p>
+        <h3>
+            <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-2">Browse
+                Artworks</a>
+        </h3>
     </div>
 </div>
 <!--End of Jumbotron Section - artists.html -->
@@ -50,9 +54,9 @@
                         <div class="card-footer bg-white pt-0 border-0 text-left">
                             <div class="row">
                                 <div class="col">
-                                    <p class="lead mb-0 text-left"><i class="fas fa-user-graduate"></i>
+                                    <p class="lead mb-0 text-left"><i class="fas fa-university"></i>
                                         {{ artist.education }}</p>
-                                    <p class="lead mb-0 text-left"><i class="fas fa-calendar-alt"></i>
+                                    <p class="lead mb-0 text-left"><i class="fas fa-user-graduate"></i>
                                         {{ artist.graduation }}</p>
                                     <p class="lead mb-0 text-left"><i class="fas fa-paint-brush"></i>
                                         {{ artist.specialisation }}</p>
