@@ -20,11 +20,15 @@
             Check
             out the artworks on offer today!
         </p>
+        <h3>
+            <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-2">Browse
+                Artworks</a>
+        </h3>
     </div>
 </div>
 <!--End of Jumbotron Section - teams.html -->
 
-<!--Start of Employees Section - teams.html--> 
+<!--Start of Employees Section - teams.html-->
 <div class="overlay"></div>
 <div class="container-fluid">
     <div class="row">
@@ -41,9 +45,9 @@
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                     <div class="card h-100 border-0">
                         {% if team.image %}
-                            <img class="card-img-top img-fluid" src="{{ team.image.url }}" alt="{{ team.name }}">
+                        <img class="card-img-top img-fluid" src="{{ team.image.url }}" alt="{{ team.name }}">
                         {% else %}
-                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ team.name }}">
+                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ team.name }}">
                         {% endif %}
                         <div class="card-body pb-0">
                             <p class="lead mb-2 font-weight-bold"><i class="fas fa-user"></i> {{ team.name }}</p>
@@ -85,5 +89,5 @@
         </div>
     </div>
 </div>
-<!--End of Employees Section - teams.html--> 
+<!--End of Employees Section - teams.html-->
 {% endblock %}

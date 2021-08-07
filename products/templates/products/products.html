@@ -10,18 +10,29 @@
 {% endblock %}
 
 {% block content %}
+<!--Jumbotron Section - products.html -->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h2 class="display-4">Buy a Work of Art</h2>
+        <p class="lead">Browse through our range of prints from some of Ireland's most exciting young artists!   
+        </p>
+    </div>
+</div>
+<!--End of Jumbotron Section - products.html -->
+
+
 <div class="overlay"></div>
 <div class="container-fluid">
     <div class="row">
-        <div class="col text-center mt-3">
+        <div class="col text-center mt-3 mb-3">
             <h2 class="logo-font">Artworks</h2>
             {% for c in current_categories %}
             <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
                 <span
-                    class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
+                    class="p-2 mt-2 badge badge-white text-dark rounded-pill border border-dark">{{ c.friendly_name }}</span>
             </a>
             {% endfor %}
-            <hr class="w-50 mb-1">
+            <hr class="w-50 mb-2">
         </div>
     </div>
     <div class="row">
@@ -30,7 +41,7 @@
                 <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                     <div class="sort-select-wrapper w-50">
                         <select id="sort-selector"
-                            class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                            class="custom-select custom-select-sm rounded-pill border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
                             <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...
                             </option>
                             <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price
@@ -53,7 +64,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 order-md-first">
-                    <p class="text-muted mt-3 text-center text-md-left">
+                    <p class="text-dark mt-3 text-center text-md-left">
                         {% if search_term or current_categories or current_sorting != 'None_None' %}
                         <span class="small"><a href="{% url 'products' %}">Artworks Home</a> | </span>
                         {% endif %}
@@ -77,28 +88,28 @@
                         </a>
                         {% endif %}
                         <div class="card-body pb-0">
-                            <p class="mb-0">{{ product.name }}</p>
+                            <p class="lead mb-2 font-weight-bold">{{ product.name }}</p>
                         </div>
                         <div class="card-body pb-0">
-                            <p class="mb-0">{{ product.artist }}</p>
+                            <p class="lead mb-2 font-weight-bold">{{ product.artist }}</p>
                         </div>
                         <div class="card-footer bg-white pt-0 border-0 text-left">
                             <div class="row">
                                 <div class="col">
                                     <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
                                     {% if product.category %}
-                                    <p class="small mt-1 mb-0">
-                                        <a class="text-muted"
+                                    <p class="mb-0 text-left font-weight-bold">
+                                        <a class="text-dark"
                                             href="{% url 'products' %}?category={{ product.category.name }}">
-                                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                            <i class="fas fa-palette"></i> {{ product.category.friendly_name }}
                                         </a>
                                     </p>
                                     {% endif %}
                                     {% if product.rating %}
-                                    <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} /
-                                        5</small>
+                                    <p class="mb-0 text-left font-weight-bold text-dark"><i class="fas fa-star-half-alt"></i> {{ product.rating }} /
+                                        5</p>
                                     {% else %}
-                                    <small class="text-muted">No Rating</small>
+                                    <p class="text-dark">No Rating</p>
                                     {% endif %}
                                     {% if request.user.is_superuser %}
                                     <small class="ml-3">
@@ -136,9 +147,9 @@
         </div>
     </div>
 </div>
-<div class="btt-button shadow-sm rounded-0 border border-black">
+<div class="btt-button shadow-sm rounded-pill border border-black">
     <a class="btt-link d-flex h-100">
-        <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+        <i class="fas fa-arrow-up text-dark mx-auto my-auto"></i>
     </a>
 </div>
 {% endblock %}
