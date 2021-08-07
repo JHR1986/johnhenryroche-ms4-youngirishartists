@@ -43,7 +43,7 @@
             <div class="row">
                 {% for team in teams %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                    <div class="card h-100 border-0">
+                    <div class="card h-100 border border-dark rounded">
                         {% if team.image %}
                         <img class="card-img-top img-fluid" src="{{ team.image.url }}" alt="{{ team.name }}">
                         {% else %}
