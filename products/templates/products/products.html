@@ -76,7 +76,7 @@
             <div class="row">
                 {% for product in products %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                    <div class="card h-100 border-0">
+                    <div class="card h-100 border border-dark rounded">
                         {% if product.image %}
                         <a href="{% url 'product_detail' product.id %}">
                             <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -88,16 +88,22 @@
                         </a>
                         {% endif %}
                         <div class="card-body pb-0">
-                            <p class="lead mb-0 font-weight-bold"><i class="fas fa-signature"></i> {{ product.name }}</p>
+                            <p class="lead mb-2 font-weight-bold"><i class="fas fa-signature"></i> {{ product.name }}
+                            </p>
                         </div>
-                        <div class="card-footer bg-white pt-0 border-0 text-left">
+                        <div class="card-footer bg-white pt-0 border border-dark rounded text-left">
                             <div class="row">
                                 <div class="col">
-                                    <p class="lead mb-0 font-weight-bold"><i class="fas fa-user"></i> {{ product.artist }}</p>
+                                    <p class="lead mb-0 font-weight-bold">
+                                        <a class="text-dark" href="{% url 'artists' %}">
+                                            <i class="fas fa-user"></i> {{ product.artist }}
+                                        </a>
+                                    </p>
                                     <p class="lead mb-0 text-left"><i class="fas fa-coins"></i> €{{ product.price }}</p>
                                     {% if product.category %}
                                     <p class="lead mb-0 text-left">
-                                        <a class="text-dark" href="{% url 'products' %}?category={{ product.category.name }}">
+                                        <a class="text-dark"
+                                            href="{% url 'products' %}?category={{ product.category.name }}">
                                             <i class="fas fa-palette"></i> {{ product.category.friendly_name }}
                                         </a>
                                     </p>
