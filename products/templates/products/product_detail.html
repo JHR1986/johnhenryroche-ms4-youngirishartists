@@ -14,7 +14,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-            <div class="image-container my-5">
+            <div class="image-container my-4">
                 {% if product.image %}
                 <a href="{{ product.image.url }}" target="_blank">
                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -27,24 +27,31 @@
             </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
-            <div class="product-details-container mb-5 mt-md-5">
-                <p class="mb-0">{{ product.name }}</p>
-                <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
+            <div class="product-details-container mb-3 mt-md-3">
+                <p class="lead mb-1 font-weight-bold"><i class="fas fa-signature"></i> {{ product.name }}</p>
+                <p class="lead mb-0 text-left">
+                    <a class="text-dark" href="{% url 'artists' %}">
+                        <i class="fas fa-user"></i> {{ product.artist }}
+                    </a>
+                </p>
+                <p class="lead mb-0 text-left">€{{ product.price }}</p>
                 {% if product.category %}
-                <p class="small mt-1 mb-0">
-                    <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                        <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                <p class="lead mb-0 text-left">
+                    <a class="text-dark" href="{% url 'products' %}?category={{ product.category.name }}">
+                        <i class="fas fa-palette"></i> {{ product.category.friendly_name }}
                     </a>
                 </p>
                 {% endif %}
                 {% if product.rating %}
-                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                <p class="lead mb-0 text-left"><i class="fas fa-star-half-alt"></i>
+                    {{ product.rating }} /
+                    5</p>
                 {% else %}
-                <small class="text-muted">No Rating</small>
+                <p class="lead mb-0 text-left">No Rating</p>
                 {% endif %}
                 {% if request.user.is_superuser %}
                 <small class="ml-3">
-                    <a href="{% url 'edit_product' product.id %}">Edit</a> |
+                    <a class="text-info" href="{% url 'edit_product' product.id %}">Edit</a> |
                     <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                 </small>
                 {% endif %}
