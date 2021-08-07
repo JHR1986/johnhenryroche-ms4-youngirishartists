@@ -34,7 +34,7 @@
                         <i class="fas fa-user"></i> {{ product.artist }}
                     </a>
                 </p>
-                <p class="lead mb-0 text-left">€{{ product.price }}</p>
+                <p class="lead mb-0 text-left"><i class="fas fa-coins"></i> €{{ product.price }}</p>
                 {% if product.category %}
                 <p class="lead mb-0 text-left">
                     <a class="text-dark" href="{% url 'products' %}?category={{ product.category.name }}">
