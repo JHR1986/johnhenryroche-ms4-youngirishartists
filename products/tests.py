@@ -1,8 +1,7 @@
 from django.test import TestCase
 
 
-# Create your tests here.
-
+# Create test view for products page
 class TestViews(TestCase):
 
     def test_get_products(self):
