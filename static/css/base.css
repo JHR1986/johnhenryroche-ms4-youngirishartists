@@ -276,7 +276,15 @@ input[name='q']::placeholder {
     color: #013220; 
 }
 
+/* Jumbotron */
 
+.homepage-text {
+    color: #013220; 
+}
+
+.homepage-box {
+    background-color: whitesmoke; 
+}
 
 
 /* fixed top navbar only on medium and up */
