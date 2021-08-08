@@ -278,12 +278,9 @@ input[name='q']::placeholder {
 
 /* Jumbotron */
 
-.homepage-text {
-    color: #013220; 
-}
-
 .homepage-box {
-    background-color: whitesmoke; 
+    background-color: whitesmoke;
+    font-size: 3rem; 
 }
 
 
