@@ -13,13 +13,17 @@
 {% block content %}
 <div class="container h-100">
     <div class="row h-100">
-        <div class="col-7 col-md-6 my-auto homepage-box p-3">
-            <span>
-                <h1 class="display-4 logo-font text-black p-3 rounded">
-                    Purchase prints from exciting young Irish artists!
-                    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded text-uppercase py-2">Browse
-                        Artworks</a>
+        <div class="col-7 col-md-6 m-2">
+            <span class="homepage-box">
+                <h1 class="display-4 logo-font text-black">
+                    View Irish art prints now!
                 </h1>
+                <div class="my-5">
+                    <h4>
+                        <a href="{% url 'products' %}"
+                            class="shop-now-button btn btn-lg rounded text-uppercase m-2">Artworks</a>
+                    </h4>
+                </div>
             </span>
         </div>
     </div>
