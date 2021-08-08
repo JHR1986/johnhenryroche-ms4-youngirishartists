@@ -280,6 +280,7 @@ input[name='q']::placeholder {
 
 .homepage-box {
     background-color: whitesmoke;
+    font-size: 2.5rem;
 }
 
 
