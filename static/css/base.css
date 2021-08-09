@@ -56,6 +56,8 @@ footer {
     background: #135f13;
     color: white;
     min-width: 220px;
+    border-width: thin;
+    border-color: #FFD700;
 }
 
 .btn-black {
