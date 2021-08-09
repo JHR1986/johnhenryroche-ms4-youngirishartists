@@ -10,6 +10,12 @@ body {
     font-family: 'Roboto';
 }
 
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #135f13;
+    text-decoration: underline;
+    text-decoration-color: #135f13;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
