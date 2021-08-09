@@ -70,6 +70,10 @@ body {
     font-size: 1.5rem;
 }
 
+.banner-text {
+    margin: 0 auto;
+}
+
 .border-black {
     border: 1px solid black !important;
 }
