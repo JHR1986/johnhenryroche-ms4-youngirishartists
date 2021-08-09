@@ -74,7 +74,7 @@ footer .row {
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: black;
+    background: #135f13;
     color: white !important;
 }
 
@@ -84,7 +84,7 @@ footer .row {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: rgb(0, 51, 94);
     color: white;
 }
 
