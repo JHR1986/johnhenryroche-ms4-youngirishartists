@@ -301,6 +301,7 @@ input[name='q']::placeholder {
         right: 0;
         left: 0;
         z-index: 1030;
+        background-color: whitesmoke;
     }
 
     .header-container {
