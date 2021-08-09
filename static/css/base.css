@@ -65,6 +65,10 @@ body {
     color: #000 !important;
 }
 
+.site-logo {
+    color: rgb(19, 95, 19);
+}
+
 .border-black {
     border: 1px solid black !important;
 }
