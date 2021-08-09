@@ -16,6 +16,23 @@ body {
     text-decoration-color: #135f13;
 }
 
+/* footer */
+footer {
+    width: 100%;
+    bottom: 0;
+  }
+  
+  footer .row {
+    text-align: center;
+    color: #135f13;
+    text-shadow: 0.2px 0 0 #000000;
+  }
+  
+  .footer-text {
+    font-size: 20px;
+    margin-top: 1.5px;
+  }
+
 /* from Bulma */
 .icon {
     align-items: center;
