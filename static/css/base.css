@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 html {
     height: 100%;
 }
@@ -7,7 +9,7 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -51,9 +53,9 @@ footer {
 }
 
 .shop-now-button {
-    background: black;
+    background: #135f13;
     color: white;
-    min-width: 260px;
+    min-width: 220px;
 }
 
 .btn-black {
@@ -143,8 +145,8 @@ input[name='q']::placeholder {
 
 .message-container {
     position: fixed;
-    top: 72px;
-    right: 15px;
+    top: 70px;
+    right: 16px;
     z-index: 99999999999;
 }
 
