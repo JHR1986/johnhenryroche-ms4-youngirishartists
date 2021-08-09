@@ -66,12 +66,13 @@ body {
 }
 
 .site-logo {
-    color: rgb(19, 95, 19);
+    color: #135f13;
     font-size: 1.5rem;
 }
 
 .banner-text {
     margin: 0 auto;
+    background-color: #135f13;
 }
 
 .border-black {
