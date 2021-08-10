@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/* main body */
+
 html {
     height: 100%;
 }
@@ -19,6 +21,7 @@ body {
 }
 
 /* footer */
+
 footer {
     width: 100%;
     bottom: 0;
@@ -51,6 +54,8 @@ footer .row {
 .main-logo-link {
     width: fit-content;
 }
+
+/* button styling */
 
 .shop-now-button {
     background: #135f13;
@@ -88,6 +93,8 @@ footer .row {
     color: white;
 }
 
+/* text sections */
+
 .text-black {
     color: #000 !important;
 }
@@ -97,10 +104,30 @@ footer .row {
     font-size: 1.5rem;
 }
 
+/* Jumbotron Sections */
+
+.jumbotron-fluid {
+    background-color: #f5f5f5;
+    color: #013220;
+}
+
+.card-heading {
+    color: #013220; 
+}
+
+.homepage-box {
+    background-color: whitesmoke;
+    font-size: 2.5rem;
+}
+
+/* free delivery banner section */
+
 .banner-text {
     margin: 0 auto;
     background-color: #135f13;
 }
+
+/* additional button settings */
 
 .border-black {
     border: 1px solid black !important;
@@ -143,7 +170,7 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
-/* ------------------------------- bootstrap toasts */
+/* toasts styling */
 
 .message-container {
     position: fixed;
@@ -172,7 +199,8 @@ input[name='q']::placeholder {
     right: 36px;
 }
 
-/* Convenience classes - colors copied from Bootstrap */
+/* Convenience classes for toasts */
+
 .arrow-primary {
     border-bottom-color: #0019fd !important;
 }
@@ -211,7 +239,10 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
-/* -------------------------------- Media Queries */
+/* Media Queries */
+/* The media queries detailed below are similar to the css media queries for the Boutique Ado tutorials, 
+   as I coded along with the tutorials while developing my website and the structure of my website on 
+   mobile is similar so I adopted similar styling to ensure that the design was clean - see Code Credits  
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
@@ -224,11 +255,11 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
+    color: #5d6974; /* text-secondary */
 }
 
 .allauth-form-inner-content input {
-    border-color: #000;
+    border-color: rgb(41, 1, 1);
     border-radius: 0;
 }
 
@@ -237,7 +268,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content input::placeholder {
-    color: #aab7c4;
+    color: #5d6974;
 }
 
 .allauth-form-inner-content button,
@@ -293,33 +324,14 @@ input[name='q']::placeholder {
 
 .custom-checkbox .custom-control-label::before {
     border-radius: 0;
-    border-color: #dc3545;
+    border-color: #f12f42;
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: #dc3545;
-    border-color: #dc3545;
+    background-color: #f12f42;
+    border-color: #f12f42;
     border-radius: 0;
 }
-
-/* Jumbotron */
-
-.jumbotron-fluid {
-    background-color: #f5f5f5;
-    color: #013220;
-}
-
-.card-heading {
-    color: #013220; 
-}
-
-/* Jumbotron */
-
-.homepage-box {
-    background-color: whitesmoke;
-    font-size: 2.5rem;
-}
-
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
@@ -332,14 +344,14 @@ input[name='q']::placeholder {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 170px;
     }
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 116px;
+        padding-top: 120px;
     }
 
     body {

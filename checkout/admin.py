@@ -2,6 +2,7 @@ from django.contrib import admin
 from .models import Order, OrderLineItem
 
 
+# Register the Order Models here
 class OrderLineItemAdminInline(admin.TabularInline):
     model = OrderLineItem
     readonly_fields = ('lineitem_total',)

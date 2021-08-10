@@ -7,6 +7,7 @@ from .forms import UserProfileForm
 from checkout.models import Order
 
 
+# Views for Profiles Listed Below
 @login_required
 def profile(request):
     """ Display the user's profile. """

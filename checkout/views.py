@@ -16,6 +16,7 @@ import stripe
 import json
 
 
+# Views listed below
 @require_POST
 def cache_checkout_data(request):
     try:

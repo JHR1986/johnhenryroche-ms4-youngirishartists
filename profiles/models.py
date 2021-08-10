@@ -6,6 +6,7 @@ from django.dispatch import receiver
 from django_countries.fields import CountryField
 
 
+# Models for User Profile
 class UserProfile(models.Model):
     """
     A user profile model for maintaining default

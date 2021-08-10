@@ -11,6 +11,7 @@ import json
 import time
 
 
+# Webhook handler for Stripe
 class StripeWH_Handler:
     """Handle Stripe webhooks"""
 
@@ -32,7 +33,7 @@ class StripeWH_Handler:
             body,
             settings.DEFAULT_FROM_EMAIL,
             [cust_email]
-        )        
+        )
 
     def handle_event(self, event):
         """
