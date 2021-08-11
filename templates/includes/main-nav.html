@@ -1,18 +1,18 @@
 <!--Start of Main Nav - main-nav.html-->
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
-        <li class="nav-item">
+        <li class="nav-item {% if page == 'home' %}active{% endif %}">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
                 Home
             </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item {% if page == 'teams' %}active{% endif %}">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'teams' %}" id="about-link">
                 About
             </a>
         </li>
 
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown {% if page == 'products' %}active{% endif %}">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="artworks-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Artworks
             </a>
@@ -24,7 +24,7 @@
             </div>
         </li>
 
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown {% if page == 'products' %}active{% endif %}">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="type-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Art Styles
             </a>
@@ -37,13 +37,13 @@
             </div>
         </li>
 
-        <li class="nav-item">
+        <li class="nav-item {% if page == 'artists' %}active{% endif %}">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'artists' %}" id="artists-link">
                Artists
             </a>
         </li>
 
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown {% if page == 'products' %}active{% endif %}">
             <a class="logo-font font-weight-bold nav-link text-black" href="#" id="deals-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Specials
             </a>
