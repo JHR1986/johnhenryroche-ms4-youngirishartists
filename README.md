@@ -84,4 +84,26 @@ imported correctly.
 
 ### Wireframes
 - My general site map and wireframes are saved to PDF and can be found [here](media/wireframes.pdf). I designed them at the start of the project and they served as the basis for this project. 
+- In review, the wireframes stayed generally consistent with the finished design (in respect of the Home page, About Page, Artworks page, Artists page, Specials page, Login page and Register page), however I did add jumbotron sections into several pages of the website, in order to provide more information to the user and to provide a button for going to the artworks page.
+
+## Features
+- The website is responsive on all device sizes (and has been tested through Chrome Dev Tools on various devices including iPhone 6/7/8, iPhone X, Galaxy S5, iPad and Desktop).
+- The website has several interactive elements, including a large Bootstrap button on the Home, About and Artists pages which can be clicked to navigate to the Artworks page, and links in the card section for each artwork to go to the artists page and to see a specific category of art (e.g. pop art).   
+- Each page in the website features a responsive Bootstrap navigation bar with the site logo featured to the left, a search bar in the centre top, the account and bag icons to the right, and the six page links below. Each page also contains a 3 column Bootstrap footer with a copyright message, address and contact information (email and phone). The pages contain the following features on various pages:
+    - Home Page: Main background hero image (oil painting on a white canvas) with a large heading and a button to the Artworks page. 
+    - About Page: A main jumbotron about section containing a link to the Artworks page, and 8 cards below detailing the management team of Young Irish Artists with their names and contact information.
+    - Artworks Page: A main jumbotron section with filtering options, and cards below detailing the artworks on offer.
+    - Art Styles Page: A main jumbotron section and cards below detailing the artworks on offer in respect of a certain style of art.
+    - Art Styles Page: A main jumbotron section and cards below detailing the special offers on sale in respect of the artworks.
+    - Artworks Detail Page: When an artworks is selected, a prominent image of the artwork with details and buttons to add the item to bag, increase quantity or keep shopping.
+    - Shopping Bag Page: Details of the item to be purhased, as well as the cost information, and buttons to keep shopping or to continue to secure checkout.
+    - Checkout Page: Form to the be filled out (with information already populated if logged in) in respect of address and card number, and details of the purchase. 
+    - Success Page: Confirmation page that product has been purhcased, which confirms that email has been sent to user and details of purchaser are clearly listed.
+    - A main jumbotron artists section containing a link to the Artworks page, and 12 cards below detailing the artists represented by Young Irish Artists with their names and education information (college, graduation year).
+    - Register Page: Form to be filled out in order to be registered, with two buttons allowing user to go back to login or to register.
+    - Allauth Pages: Allauth has various pages relating to email verification, logout etc.
+    - Login Page: Username and Password to be filled out in order login, with two buttons allowing user to go back to home page or to login.
+    - 404 Error Page: A page with a heading "404 Error", a confirmation statement and link back to the homepage. 
+    - 500 Error Page: A page with a heading "500 Error", a confirmation statement and link back to the homepage. 
+
 
