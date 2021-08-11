@@ -141,6 +141,15 @@ quicker.
 
 - Testing information for this project can be found in the separate Testing File [here](testing.md). 
 
+## Credits
+### Code
+- I studied a comment by Naoise Gaffney on Code Institute's Slack channel in respect of how to correctly set up the 404 & 500 error pages for a Django project.
+- I studied a comment by Ed B_alum on Code Institute's Slack channel in respect of resolving an issue I had when trying to login to Heroku through the CLI before launching my Heroku app. 
+- On the recommendation of my tutor, I studied Anouk Smet's MS4 Readme (Casa Pedra Nobre), in respect of its structure and layout, especially in respect of the deployment section. 
+- I used the Bootstrap Library throughout the project to make the site more responsive through using the Bootstrap Grid System and employing Bootstrap elements for the Navbar, Footer, Jumbotron and Cards.
+- I studied in detail the videos and code for the Code Institute Django Project (Boutique Ado) presented by Chris Zielinski while completing my website, in order to get a clear understanding of how the various elements of Django, Stripe and AWS work, and how to implement a fully functioning Django website. While following the structure of Chris' site, I at all time tried to integrate my own ideas, styling and custom models, while completing my coding. I followed Chris's code closely in respect of the Stripe payments section, as I had not encountered this functionality previously.  
+
+
 ### Content
 - All content within this project was written by the developer.
 
