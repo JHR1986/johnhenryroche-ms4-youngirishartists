@@ -106,4 +106,47 @@ imported correctly.
     - 404 Error Page: A page with a heading "404 Error", a confirmation statement and link back to the homepage. 
     - 500 Error Page: A page with a heading "500 Error", a confirmation statement and link back to the homepage. 
 
+## Technologies Used
 
+### Languages Used
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/CSS)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+### Frameworks and Libraries and Programs Used
+
+1. [Bootstrap 4](https://getbootstrap.com/): Bootstrap was utilised to assist with the responsiveness and styling of the website, specifically in respect of the Artists, Products and About pages.
+2. [jQuery](https://jquery.com/): jQuery was used to assist with the bag, checkout and payment system functionality.
+3. [Google Fonts](https://fonts.google.com/): Google fonts was utilised to import the ‘Roboto’ font into the style.css file and this font is used on all pages throughout the website.
+4. [Font Awesome](https://fontawesome.com/): Font Awesome was utilised in the About and Artists, as well as in the footer, for aesthetic and UX purposes. I matched the icons with the activity 
+or place that they most closely represented.
+5. [Stripe](https://stripe.com/ie): Stripe was used for the payment system functionality.
+6. [Django]( https://www.djangoproject.com/): The website was built using Django technology.
+7. [Git](https://git-scm.com/): Git was used for version control throughout the project by utilizing the Gitpod terminal to Commit to git and Push to the GitHub repository.
+8. [GitPod](https://www.gitpod.io/): Gitpod hosted the VSC IDE used for this project.
+9. [PIP](https://pypi.org/project/pip/): PIP was used to install the tools needed in this project.
+10. [Heroku](https://www.heroku.com/): Heroku was utilised to host and deploy my website.
+11. [Visual Studio Code](https://code.visualstudio.com/): Visual Studio Code was the IDE used for developing this project.
+12. [GitHub](https://github.com/): GitHub was used to store the code for the project after being pushed from Gitpod.
+13. [AWS – S3]( https://aws.amazon.com/console/): I used Amazon S3 to store my static files.
+14. [Favicon](https://en.wikipedia.org/wiki/Favicon): I used a Favicon image of the logo and added it to all of the pages.
+15. [Free Image Optimiser](http://www.imageoptimizer.net/Pages/Home.aspx): I utilised a photo 
+optimiser to ensure that the high-quality images that I used from the Unsplash website would load 
+quicker.
+16. [Balsamiq](https://balsamiq.com/): Balsamiq was used to create the wireframes during the initial design phase.
+17. [Coolors](https://coolors.co/): I prepared the screenshot (included in this Readme) of the colours I had selected for this project using the Coolors template.
+
+## Testing
+
+- Testing information for this project can be found in the separate Testing File [here](testing.md). 
+
+### Content
+- All content within this project was written by the developer.
+
+### Media
+- The images used in this project (in respect of the Home, About, Artists and Artworks pages) have all been sourced from Unsplash, which is a stock photography site which contains a large catalogue of high quality free to use images which are not the subject of copyright. To improve the speed of the site, all of the images were put through an image optimiser. 
+
+### Acknowledgements
+- I wish to thank my Mentor, Maranatha Ilesanmi for providing me with excellent feedback and support throughout all of the four projects for this course, which really helped my overall coding confidence. 
+- I also wish to thank Tutor Support, Student Care and the Slack Community at Code Institute for their support and advice during the whole course, and especially while working on my MS4 project when I had any queries.
