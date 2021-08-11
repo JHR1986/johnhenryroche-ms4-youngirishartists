@@ -83,5 +83,5 @@ imported correctly.
 
 
 ### Wireframes
-- My general site map and wireframes are saved to PDF and can be found [here](media/Young Irish Artists - Wireframes (PDF).pdf). I designed them at the start of the project and they served as the basis for this project. 
-- In review, the wireframes stayed generally consistent with the finished design (in respect of the Home page, Phrases page, Login page and Register page). While completing the wireframes at the start of the project, I was not aware that my project would also require additional html pages in respect of the CRUD features (Profile, Add Phrase, Edit Phrase) and errors (404, 500) so these pages were not included in the original wireframes. I queried this point on the Slack channel and was advised to keep the original wireframes as they are (as they are a reflection of what my original design plan was), while optionally creating a 2nd wireframes file relating to the additional html pages. I took this advice and the wireframes for the additional 5 html pages are located [here](static/images/wireframes2.pdf).
+- My general site map and wireframes are saved to PDF and can be found [here](media/wireframes.pdf). I designed them at the start of the project and they served as the basis for this project. 
+
