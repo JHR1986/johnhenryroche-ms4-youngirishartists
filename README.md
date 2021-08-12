@@ -108,6 +108,14 @@ imported correctly.
     - 404 Error Page: A page with a heading "404 Error", a confirmation statement and link back to the homepage. 
     - 500 Error Page: A page with a heading "500 Error", a confirmation statement and link back to the homepage. 
 
+## Database Design
+
+For the project I set up 7 database Models which you can see in the image below. I have also highlighted the relationships between the various models.
+
+![database](https://user-images.githubusercontent.com/71781554/129186496-36d89200-73c7-4565-8ab5-26d9c8e4af95.png)
+
+
+
 ## Technologies Used
 
 ### Languages Used
