@@ -85,6 +85,8 @@ imported correctly.
 ### Wireframes
 - My general site map and wireframes are saved to PDF and can be found [here](media/wireframes.pdf). I designed them at the start of the project and they served as the basis for this project. 
 - In review, the wireframes stayed generally consistent with the finished design (in respect of the Home page, About Page, Artworks page, Artists page, Specials page, Login page and Register page), however I did add jumbotron sections into several pages of the website, in order to provide more information to the user and to provide a button for going to the artworks page.
+- While building my website, I also prepared user stories (based on the structure of the User Stories prepared for the tutorial project), to examine how the user would progress through my site, and this is detailed in the chart below;
+![userstories](https://user-images.githubusercontent.com/71781554/129165735-a5bbba96-b755-44e0-909c-5ab58e7d766d.png)
 
 ## Features
 - The website is responsive on all device sizes (and has been tested through Chrome Dev Tools on various devices including iPhone 6/7/8, iPhone X, Galaxy S5, iPad and Desktop).
