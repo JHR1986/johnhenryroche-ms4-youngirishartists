@@ -13,7 +13,6 @@
   * [Wireframes](#wireframes)
 - [Features](#features)
 - [Database Design](#database-design)
-  * [Flowchart](#flowchart)
   * [Database](#database)
 - [Technologies Used](#technologies-used)
   * [Languages Used](#languages-used)
@@ -106,15 +105,16 @@ imported correctly.
     - Allauth Pages: Allauth has various pages relating to email verification, logout etc.
     - Login Page: Username and Password to be filled out in order login, with two buttons allowing user to go back to home page or to login.
     - 404 Error Page: A page with a heading "404 Error", a confirmation statement and link back to the homepage. 
-    - 500 Error Page: A page with a heading "500 Error", a confirmation statement and link back to the homepage. 
+    - 500 Error Page: A page with a heading "500 Error", a confirmation statement and link back to the homepage.
+- Future features that could be considered for the website to expand its capability would be to implement a comment section in respect of the artworks and to include a monthly blog or newsletter email to users in respect of new artworks that have been recently added to the site. 
 
 ## Database Design
 
 For the project I set up 7 database Models which you can see in the image below. I have also highlighted the relationships between the various models.
 
+### Database 
+
 ![database](https://user-images.githubusercontent.com/71781554/129186496-36d89200-73c7-4565-8ab5-26d9c8e4af95.png)
-
-
 
 ## Technologies Used
 
@@ -149,7 +149,7 @@ quicker.
 
 ## Deployment
 
-### Local Deployment
+### How to Run This Project Locally
 
 I have created the project using Github, from there I used Gitpod to write my code. Then I used commits to git followed by "git push" to my GitHub repository. I've deployed this project to Heroku and used "git push heroku master" to make sure my pushes to GitHub were also made to Heroku.
 
