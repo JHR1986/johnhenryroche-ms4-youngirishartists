@@ -1,3 +1,19 @@
+### Client Stories Testing
+The most direct path through the website is as follows:
+- Home – Artworks – Login (if a user) or Register (if not a user).
+- On the Home page, the user is presented with a prominent call to action button (as detailed below); 
+    1. "Browse Artworks": From Home – Artworks
+- On the About page, the user can read about the site, click a button to go to the Artworks, view the Website Team and use the Navbar to go to different pages.
+- On the Artworks page, the user can view all of the artworks for sale, with the option of filtering them by Price, Name, Rating and Category. There is also a navbar link to Art Styles, where the user can browse the artworks by their style of painting (e.g. Pop Art or Watercolours), and to Specials where users can browse new arrivals or deals in respect of the Artworks.
+- On the Artists page, the user can read about the artists, click a button to go to the Artworks, view the Artist Profiles and use the Navbar to go to different pages.
+- On all of the pages, there is a search bar located in the navbar, which enables the user to search for artworks either by artist or artwork name.
+- On the Home Page, there is a My Account button in the navbar, which when clicked allows the user to either login if they have an account or to register if they do not. To register, the user receives a verification email. 
+- When a product is selected, it is added to the bag page, from which the user can progress to the checkout page and then make their payment. When payment is made the user receives an email confirming the purchase and they also can see their orders when signed in.
+- When the user logs out, they must click a logout button and they are no longer logged in.
+The information in the site is kept very structured and to concise, in order that it is very easy to follow and the user does not feel overwhelmed with details.
+
+
+
 ## Further Testing
 
 ### Further Testing Details
