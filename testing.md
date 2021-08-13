@@ -202,57 +202,56 @@ This is a complete account of the testing process for the site from start to fin
     - Repeat the verification steps completed for the previous html page.
     - Confirm that the Navbar is identical on all html pages.
 
-2. Shopping Bag:
+2. Checkout Form:
     - Reduce and expand the width of the window to verify that the checkout form works and centres the way expected, that it looks good on all device widths and that the font color and size is appropriate.
     - Confirm validation is working correctly for every form input field.
-    - Confirm that user can login when correct email and password are inputted. 
-    - Confirm when user clicks link that they are brought back to Young Irish Artists, and that a toast message confirms that they are now logged in. 
-    
-    
-    Confirm that shopping bag page is correctly showing the items that have been selected.
-    - Confirm that update and remove buttons are working correctly.
-    - Confirm that delivery functionality is working.
-    - Confirm that Keep Shopping and Progress to Checkout Buttons are both working correctly.
+    - Confirm when user clicks complete order that spinner shows, and that a toast message confirms that the purchase has been made and that they also receive an email confirming same.
 
 3.  Footer:
     - Repeat verification steps completed for the Footer on previous html pages.
     - Confirm that the Footer is identical on all html pages.
 
-5.  Review all functionality and responsiveness on my mobile phone and tablet for the Bag Page and confirm that everything on this page is correct.
+5.  Review all functionality and responsiveness on my mobile phone and tablet for the Checkout Page and confirm that everything on this page is correct.
 
-
-
-
-#### Edit Phrase Page
+#### Artists Page
 1.  Navigation bar:
-    - Repeat the verification steps completed for the Navbar on the previous html pages.
+    - Repeat the verification steps completed for the Navbar on previous html pages.
     - Confirm that the Navbar is identical on all html pages.
 
-2.  Bootstrap Form for Edit Phrase:
-    - Confirm that data from the added phrase to be edited is listed correctly and that the fields are currently green (as the information that was previously added was valid).
-    - Confirm that all fields (Phrase Category, English Phrase, Korean Phrase & Fun Fact) can be edited by the user and that form will only submit when all fields are filled correctly (e.g. validation is working as intended). 
-    - When correct information is present, click Cancel button and confirm that user is directed to Phrases page and that phrase has not been edited.
-    - When correct information is present, click Edit Phrase button and confirm that user is directed to Phrases page.
-    - Confirm that phrase has been edited, and that buttons to Edit or Delete phrase are listed below phrase.
-    - Reduce and expand width of window to verify that the form responds as expected, and that it fits correctly on all device widths from mobile to tablet to desktop.
+2.  Jumbotron:
+    - Confirm that the jumbotron text section and the call to action button below are correctly appearing on screen and is fully responsive when the width of the window is reduced to mobile size.
 
-3.  Image:
-    - Confirm that the background image for the page is correctly visible.
+3.  Cards:
+    - Confirm that the twelve artist cards are correctly spaced on screen and are fully responsive.
 
 4.  Footer:
-    - Repeat verification steps completed for the Footer on previous html pages.
+    - Repeat verification steps completed for the Footer on previous pages.
     - Confirm that the Footer is identical on all html pages.
 
-5.  Review all functionality and responsiveness on my mobile phone and tablet for the Edit Phrase Page and confirm that everything on this page is correct.
+5.  Review all functionality and responsiveness on my mobile phone and tablet for the Artists Page and confirm that everything on this page is correct.
+
+#### SuperUser
+1.  Navigation bar:
+    - Repeat the verification steps completed for the Navbar on previous html pages.
+    - Confirm that the Navbar is identical on all html pages.
+
+2.  Form: 
+    - Confirm validation is working correctly for every form input field.
+    - Confirm when superuser clicks image and add product buttons (when form is completed), that everything works.
+
+3.  Buttons:
+    - Confirm superuser can edit and delete products on artworks page.
+
+4.  Footer:
+    - Repeat verification steps completed for the Footer on previous pages.
+    - Confirm that the Footer is identical on all html pages.
+
+5.  Review all functionality and responsiveness on my mobile phone and tablet for the SuperUser Pages and confirm that everything on this page is correct.
 
 #### Additional HTML Pages
 
-- Logout: Confirm that clicking the Logout link works and that when clicked the user is returned to the Login page and sees confirmation flash message.
+- Logout: Confirm that clicking the Logout link works.
 - Error Pages: Confirm that 404 and 500 error html pages are correctly written (html has been validated). When user reaches the 404 and 500 page they see the heading "Something went wrong" and can click the Return to Home Page button as an option. Confirm that images below "Something went wrong" text are responsive and that alt tags are attached. I reviewed all the functionality and responsiveness on my mobile phone and tablet for the 404 page and confirmed that everything on this page is correct.  
-
-
-
-
 
 ## Further Testing
 
