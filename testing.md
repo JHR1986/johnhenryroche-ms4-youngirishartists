@@ -1,3 +1,29 @@
+# Young Irish Artists Website - Testing details
+
+## [Main Readme File](README.md).
+
+[View the Live Website Here](https://jhroche-young-irish-artists.herokuapp.com/)
+
+- [Testing](#testing)
+  * [Client Stories Testing](#client-stories-testing)
+  * [Testing Client Stories from UX Section of Main Readme File](#testing-client-stories-from-ux-section-of-main-readme-file)
+    + [First Time Visitor Goals](#first-time-visitor-goals)
+    + [Returning Visitor Goals](#returning-visitor-goals)
+    + [Frequent Visitor Goals](#frequent-visitor-goals)
+  * [Manual Logical Testing of all Elements and Functionality on every Page](#manual-logical-testing-of-all-elements-and-functionality-on-every-page)
+    + [Home Page](#home-page)
+    + [Phrases Page](#phrases-page)
+    + [Login Page](#login-page)
+    + [Register Page](#register-page)
+    + [Profile Page](#profile-page)
+    + [Add Phrase Page](#add-phrase-page)
+    + [Edit Phrase Page](#edit-phrase-page)
+    + [Additional HTML Pages](#additional-html-pages)
+- [Further Testing](#further-testing)
+  * [Further Testing Details](#further-testing-details)
+  * [Known Bugs](#known-bugs)
+
+
 ### Client Stories Testing
 The most direct path through the website is as follows:
 - Home – Artworks – Login (if a user) or Register (if not a user).
