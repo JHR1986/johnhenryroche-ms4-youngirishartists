@@ -13,6 +13,28 @@ The most direct path through the website is as follows:
 The information in the site is kept very structured and to concise, in order that it is very easy to follow and the user does not feel overwhelmed with details.
 
 
+### Testing Client Stories from UX Section of Main Readme File
+
+#### First Time Visitor Goals
+1.  As a First Time Visitor, I want to quickly confirm what products the ecommerce website is selling (e.g. art prints).
+- The Home page has a general synopsis of the purpose of the website and a striking background image of a colourful artwork on a blank canvas, and there is a prominent navigation bar for clicking to the About, Artworks (Artworks, Artwork Styles, Specials) and Artists pages. 
+2.  As a First Time Visitor, I want to be able to easily browse through the site pages (including About and Artists) and view the artworks that are on offer.
+- The Navbar is easy to understand and offers users the opportunity to easily browse through the site pages. The Home, About and Artists pages each feature a prominent call to action button to return the user to the Artworks page, while there is also a search bar located in the centre of the navbar for searching by artist or artwork name. 
+3.  As a First Time Visitor, I want to be able to go to the Register page and create my own account if I am considering making a purchase.
+- The My Account button on the home page dropsdown to a login and register link. When the Register link is selected, the user enters their email, username and password to create an account. 
+
+#### Returning Visitor Goals
+1.  As a Returning Visitor, I want to be able to be able to make purchases of art prints easily and effortlessly, as I have an account and my information will be pre-loaded to save me time. 
+- When an artwork is selected, the user is brought through to a more detailed page describing the artwork. They then have the option to include the quantity and add it to their bag. The system is very user friendly going from product to bag to checkout in a manner of clicks, while allowing the user to remove the product if they change their mind and to continue shopping. 
+2.  As a Returning Visitor, I want to be able to filter my searches for artworks by genre, price, rating or specials, in order that I can purchase the artworks that best suit my taste and price range.
+- The Navbar and the main artworks page allows the user to filter the products by price, rating, category, style and special offers, in descending/ascending or alphabetical order.  
+
+#### Frequent Visitor Goals
+1. As a Frequent/Returning Visitor, I want to be able to easily contact Young Irish Artists if there has been any issue with my purchase, and the contact information is clearly highlighted in the Footer Section of the site. 
+- The footer to each of the html pages lists the site's address in Dublin, their opening hours and phone/email address, so that any subsequent queries can be addressed to the site owners.
+2. As a Frequent/Returning Visitor, I want to be able to see new artists that have joined the site and the new artworks that they have produced, as the artworks on offer will be updated on a regular basis.
+- With the site being updated on a regular basis, the Artworks page will list more and more phrases, so that the user can improve their language skills when they return to the site on a regular basis. The search functionality also enables the user to find phrases easily when they begin to increase significantly in number. 
+
 
 ## Further Testing
 
