@@ -23,6 +23,15 @@
   * [Further Testing Details](#further-testing-details)
   * [Known Bugs](#known-bugs)
 
+## Testing
+- The W3C Markup Validator and W3C CSS Validator Services were used to validate the pages of the project in order to ensure that the code was clear and clean. I used the source code of the website pages in order that the django code would be correctly rendered for the validator.
+
+- I tested and added comments to every HTML, CSS, Javascript file (JSHint) and every Python file (Pep8Online) in the project to ensure everything about my code was in order, and my review of same is detailed in the list below;
+
+![filereview](https://user-images.githubusercontent.com/71781554/129359202-362e7f2a-a5a4-4f50-ad5e-195ebbe29f23.png)
+
+
+- In order to ensure that the site has very good accessibility, I ensured that alt tags were added to all images. The site scored an accessibility score of 100 in the Google Lighthouse review (see Further Testing section below). 
 
 ### Client Stories Testing
 The most direct path through the website is as follows:
