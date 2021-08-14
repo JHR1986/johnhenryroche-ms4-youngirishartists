@@ -31,7 +31,7 @@
 
 [View the Live Website Here](https://jhroche-young-irish-artists.herokuapp.com/)
 
-This project comprises the development of a fictional ecommerce website where users can purchase prints by exciting new artists based in Ireland working in a range of painting styles. The website also provides a helpful platform for recently graduated artists to gain exposure and recognition of their recent work. The website allows the user to create a profile when they are making a purchase so that they have an account through which they can see their history of purchases and load their information in order to make future orders easier. There is also a super user profile through which products can be amended through CRUD (Create, Read, Update and Delete) features. In respect of the overall construction of this website, it has been designed to be fully responsive, intuitive and accessible on a range of media devices (e.g. mobile, tablet and desktop), in order to make it as easy as possible for users of the website to navigate it and make their required purchases.   
+This project comprises the development of a fictional ecommerce website where users can purchase prints by exciting new artists based in Ireland working in a range of painting styles. The website also provides a helpful platform for recently graduated artists to gain exposure and recognition of their recent work thus improving their profile in the Irish art world. The website allows the user to create a profile when they are making a purchase so that they have an account through which they can see their history of previous purchases and load their billing and shipping information in order to make future orders easier. There is also a superuser profile for the site administrator through which products can be amended through CRUD (Create, Read, Update and Delete) functionality. In respect of the overall construction of this website, it has been designed to be fully responsive, intuitive and accessible on a range of media devices (e.g. mobile, tablet and desktop), in order to make it as easy as possible for users of the website to navigate it and make their required purchases.   
 
 Photo of Site Represented on Various Media to highlight responsive design:
 
@@ -47,17 +47,17 @@ Photo of Site Represented on Various Media to highlight responsive design:
 3.  As a First Time Visitor, I want to be able to go to the Register page and create my own account if I am considering making a purchase.
 
 ### Returning Visitor Goals
-1.  As a Returning Visitor, I want to be able to be able to make purchases of art prints easily and effortlessly, as I have an account and my information will be pre-loaded to save me time. 
-2.  As a Returning Visitor, I want to be able to filter my searches for artworks by genre, price, rating or specials, in order that I can purchase the artworks that best suit my taste and price range. 
+1.  As a Returning Visitor, I want to be able make purchases of art prints easily and efficiently, as I now have an account and my information (e.g. billing and shipping) will be pre-loaded. 
+2.  As a Returning Visitor, I want to be able to filter my searches for artworks by categories including genre, price, rating or specials, in order that I can purchase the artworks that best suit my preference and price range. 
 
 ### Frequent Visitor Goals
-1. As a Frequent/Returning Visitor, I want to be able to easily contact Young Irish Artists if there has been any issue with my purchase, and the contact information is clearly highlighted in the Footer Section of the site. 
-2. As a Frequent/Returning Visitor, I want to be able to see new artists that have joined the site and the new artworks that they have produced, as the artworks on offer will be updated on a regular basis.
+1. As a Frequent/Returning Visitor, I want to be able to easily contact Young Irish Artists if there has been any issue with my purchase, and the contact information for the company is clearly highlighted in the Footer Section of the site. 
+2. As a Frequent/Returning Visitor, I want to be able to see new artists that have joined the site and the new artworks that they have produced, as well as new artworks by current artists, as the artworks on offer for sale will be updated on a regular basis.
 
 ## Design
 
 ### Colour Scheme
-- In designing the colour scheme for this website, I focused upon using various white, black and green colours, while the buttons and toasts used a variety of colours (including blue, yellow and red) for hover, focus and active states. I ensured that these colours contrasted well in respect of the overall styling and would result in good readability and accessibility for the user, which I confirmed was in order through completing detailed testing on Google Lighthouse.
+- In designing the colour scheme for this website, I focused upon using various white, black and green colours, while the buttons and toast messages use a variety of colours (including blue, yellow and red) for hover, focus and active states. I ensured that these colours contrasted well in respect of the overall styling and would result in good readability and accessibility for the user, which I confirmed was in order through completing detailed testing on Google Lighthouse (accessibility = 100).
 
 - The main colours that I used for the website are detailed in the colour chart below which I prepared on coolors.co;
 
@@ -66,11 +66,11 @@ Photo of Site Represented on Various Media to highlight responsive design:
 ### Typography
 - The Roboto font (which I downloaded from Google Fonts) is the main font used throughout the 
 whole website, with Sans Serif as the fallback font in case for any reason the Roboto font fails to be 
-imported correctly.
+imported correctly. I used this font because I liked its structure, easy to read style and modern appearance.
 - As per its description on the Google Fonts website, Roboto has a mechanical skeleton and the forms are largely geometric, while at the same time, the font features friendly and open curves. It was designed by Christian Robertson, an interface designer at Google. 
 
 ### Imagery
-- The imagery within the website is very focused upon the artworks that the site is selling. The home page has a large background image featuring a very colourful oil painting on a white canvas, which immediately captures the attention of the user. The About and Artists pages feature cards with images of the management team of Young Irish Artists and the artists represented in the site, and these give the user a visual representation of who these people are. The artworks page itself includes cards with images of the artworks so users can choose the style and design of what they wish to purchase, and there is a feature where the user can click into the artwork to see a full screen image and study it more carefully. Examples of images from the site are detailed below; 
+- The imagery within the website is very focused upon the artworks that the site is selling. The home page has a large background image featuring a very colourful oil painting on a white canvas, which immediately captures the attention of the user. The About and Artists pages feature cards with images of the management team of Young Irish Artists and the artists represented in the site, and these give the user a visual representation of who these people are. The artworks page itself includes cards with images of the artworks so users can choose the style and design of what they wish to purchase, and there is a feature where the user can click into the artwork to see a full screen image (which opens in a new tab) and study it more carefully. Examples of images from the site are detailed below; 
 
 ![homepage](https://user-images.githubusercontent.com/71781554/129009918-c8f547e5-0cba-4a9b-b4d3-fcf1876bad8a.png)
 
@@ -82,8 +82,8 @@ imported correctly.
 
 
 ### Wireframes
-- My general site map and wireframes are saved to PDF and can be found [here](media/wireframes.pdf). I designed them at the start of the project and they served as the basis for this project. 
-- In review, the wireframes stayed generally consistent with the finished design (in respect of the Home page, About Page, Artworks page, Artists page, Specials page, Login page and Register page), however I did add jumbotron sections into several pages of the website, in order to provide more information to the user and to provide a button for going to the artworks page.
+- My wireframes are saved to PDF and can be found [here](media/wireframes.pdf). I designed them at the start of the project and they served as the basis for this project. 
+- In review, the wireframes stayed generally consistent with the finished design (in respect of the Home page, About Page, Artists page, Specials page, Login page, Register page, Artwork Detail page, Bag Page and Checkout Page), however I did add jumbotron sections into several pages of the website, in order to provide more information to the user and to provide a button in order to keep the user returning to the artworks page.
 - While building my website, I also prepared user stories (based on the structure of the User Stories prepared for the tutorial project), to examine how the user would progress through my site, and this is detailed in the chart below;
 ![userstories](https://user-images.githubusercontent.com/71781554/129191126-6d9c931a-f7dc-4b44-a907-ab89455021ee.png)
 
@@ -95,12 +95,12 @@ imported correctly.
     - About Page: A main jumbotron about section containing a link to the Artworks page, and 8 cards below detailing the management team of Young Irish Artists with their names and contact information.
     - Artworks Page: A main jumbotron section with filtering options, and cards below detailing the artworks on offer.
     - Art Styles Page: A main jumbotron section and cards below detailing the artworks on offer in respect of a certain style of art.
-    - Art Styles Page: A main jumbotron section and cards below detailing the special offers on sale in respect of the artworks.
+    - Specials Page: A main jumbotron section and cards below detailing the special offers on sale in respect of the artworks.
     - Artworks Detail Page: When an artworks is selected, a prominent image of the artwork with details and buttons to add the item to bag, increase quantity or keep shopping.
     - Shopping Bag Page: Details of the item to be purhased, as well as the cost information, and buttons to keep shopping or to continue to secure checkout.
     - Checkout Page: Form to the be filled out (with information already populated if logged in) in respect of address and card number, and details of the purchase. 
     - Success Page: Confirmation page that product has been purhcased, which confirms that email has been sent to user and details of purchaser are clearly listed.
-    - A main jumbotron artists section containing a link to the Artworks page, and 12 cards below detailing the artists represented by Young Irish Artists with their names and education information (college, graduation year).
+    - Artists Page: A main jumbotron artists section containing a link to the Artworks page, and 12 cards below detailing the artists represented by Young Irish Artists with their names and education information (college, graduation year).
     - Register Page: Form to be filled out in order to be registered, with two buttons allowing user to go back to login or to register.
     - Allauth Pages: Allauth has various pages relating to email verification, logout etc.
     - Login Page: Username and Password to be filled out in order login, with two buttons allowing user to go back to home page or to login.
@@ -110,7 +110,7 @@ imported correctly.
 
 ## Database Design
 
-For the project I set up 7 database Models which you can see in the image below. I have also highlighted the relationships between the various models.
+For the project I set up 7 database Models which you can see in the image below. I have also highlighted the relationships between the various models. I studied five models contained in the tutorial videos and updated, expanded and amended them to suit the requirements of an ecommerce art store, while I also added two fully custom models (Team and Artists), with fully custom python code. 
 
 ### Database 
 
@@ -129,7 +129,7 @@ For the project I set up 7 database Models which you can see in the image below.
 1. [Bootstrap 4](https://getbootstrap.com/): Bootstrap was utilised to assist with the responsiveness and styling of the website, specifically in respect of the Artists, Products and About pages.
 2. [jQuery](https://jquery.com/): jQuery was used to assist with the bag, checkout and payment system functionality.
 3. [Google Fonts](https://fonts.google.com/): Google fonts was utilised to import the ‘Roboto’ font into the style.css file and this font is used on all pages throughout the website.
-4. [Font Awesome](https://fontawesome.com/): Font Awesome was utilised in the About and Artists, as well as in the footer, for aesthetic and UX purposes. I matched the icons with the activity 
+4. [Font Awesome](https://fontawesome.com/): Font Awesome was utilised in the Home, About and Artists pages, as well as in the footer, for aesthetic and UX purposes. I matched the icons with the activity 
 or place that they most closely represented.
 5. [Stripe](https://stripe.com/ie): Stripe was used for the payment system functionality.
 6. [Django]( https://www.djangoproject.com/): The website was built using Django technology.
@@ -340,7 +340,7 @@ git push
 - I studied a comment by Ed B_alum on Code Institute's Slack channel in respect of resolving an issue I had when trying to login to Heroku through the CLI before launching my Heroku app. 
 - On the recommendation of my tutor, I studied Anouk Smet's MS4 Readme (Casa Pedra Nobre), in respect of its structure and layout, especially in respect of the deployment section. 
 - I used the Bootstrap Library throughout the project to make the site more responsive through using the Bootstrap Grid System and employing Bootstrap elements for the Navbar, Footer, Jumbotron and Cards.
-- I studied in detail the videos and code for the Code Institute Django Project (Boutique Ado) presented by Chris Zielinski while completing my website, in order to get a clear understanding of how the various elements of Django, Stripe and AWS work, and how to implement a fully functioning Django website. While following the structure of Chris' site, I at all time tried to integrate my own ideas, styling and custom models, while completing my coding. I followed Chris's code closely in respect of the Stripe payments section, as I had not encountered this functionality previously.  
+- I studied in detail the videos and code for the Code Institute Django Project (Boutique Ado) presented by Chris Zielinski while completing my website, in order to get a clear understanding of how the various elements of Django, Stripe and AWS work, and how to implement a fully functioning Django website. While studying the structure of Chris' site, I at all time tried to use my own ideas, styling and custom models, while completing the coding in order to create my art ecommerce website. I followed Chris's code closely in respect of the Stripe payments section, as I had not encountered this functionality previously on the course.  
 
 
 ### Content
