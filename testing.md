@@ -96,10 +96,10 @@ This is a complete account of the testing process for the site from start to fin
     - Confirm that the jumbotron text section is correctly appearing on screen and is fully responsive when the width of the window is reduced to tablet and mobile size.
     
 3. Call to Action Button:
-    - Confirm taht the button "Browse Artworks" changes colour during hover, and sends the user to the Artworks page. 
+    - Confirm that the button "Browse Artworks" changes colour during hover, and sends the user to the Artworks page. 
     
 4. Footer:
-    - Confirm that the Font Awesome icons in the footer are visible and correctly formatted and that all text is spaced and clearly visible.
+    - Confirm that the Font Awesome icons in the Footer are visible and correctly formatted and that all text is spaced and clearly visible.
     - Reduce and expand the width of window to verify that the Footer is responsive and looks as it should on all devices, in line with the Bootstrap grid system.
     - Confirm that Footer items are correctly stacked on top of one another in tablet and mobile view.
 
@@ -113,19 +113,19 @@ This is a complete account of the testing process for the site from start to fin
 2.  Register Form:
     - Reduce and expand the width of the window to verify that the register form works and centres the way expected, that it looks good on all device widths and that the font color and size is appropriate.
     - Confirm validation is working correctly for every form input field.
-    - Confirm that user can register an account. 
+    - Confirm that the user can register an account. 
     - Confirm that verification email is sent and contains link to confirm email.
     - Confirm when user clicks link that they are brought back to Young Irish Artists, they click confirm and that a toast message confirms that they are now signed in and a registered user.
 
 3.  Footer:
-    - Repeat the verification steps completed for the footer on the Home page.
+    - Repeat the verification steps completed for the Footer on the Home page.
     - Confirm that the appearance of the Footer is identical on all html pages.
 
 4.  Review all functionality and responsiveness on my mobile phone and tablet for the Register Page and confirm that everything on this page is correct.
 
 #### Login Page
 1.  Navigation bar:
-    - Repeat the verification steps that I completed for the Navbar on the Home page.
+    - Repeat the verification steps that I completed for the Navbar on the Home and Register pages.
     - Confirm that the Navbar is appearing as identical on all html pages.
 
 2.  Login Form:
@@ -135,7 +135,7 @@ This is a complete account of the testing process for the site from start to fin
     - Confirm when user clicks link that they are brought back to Young Irish Artists, and that a toast message confirms that they are now logged in.
 
 3.  Footer:
-    - Repeat the verification steps completed for the footer on the Home page.
+    - Repeat the verification steps completed for the Footer on the Home and Register pages.
     - Confirm that the appearance of the Footer is identical on all html pages.
 
 4.  Review all functionality and responsiveness on my mobile phone and tablet for the Login Page and confirm that everything on this page is correct.
@@ -149,7 +149,7 @@ This is a complete account of the testing process for the site from start to fin
     - Confirm that the jumbotron text section and the call to action button below are correctly appearing on screen and is fully responsive when the width of the window is reduced to mobile size.
 
 3.  Cards:
-    - Confirm that the eight cards are correctly spaced on screen and are fully responsive.
+    - Confirm that the eight management team cards are correctly spaced on screen and are fully responsive when adjusted to tablet and mobile view.
 
 4.  Footer:
     - Repeat verification steps completed for the Footer on Home, Register and Login pages.
@@ -161,7 +161,7 @@ This is a complete account of the testing process for the site from start to fin
 
 (including Artworks, Art Styles and Specials in the Navbar)
 1.  Navigation bar:
-    - Repeat the verification steps completed for the Navbar on Home, About, Login and Register page.
+    - Repeat the verification steps completed for the Navbar on Home, About, Login and Register pages.
     - Confirm that the Navbar is identical on all html pages.
 
 2. Introduction Text:
@@ -172,10 +172,10 @@ This is a complete account of the testing process for the site from start to fin
     - Confirm that filter box is correctly working for all 8 options, that the art styles and specials buttons at the top of the page link to their respective categories, and that the back to top button is working. 
 
 4.  Footer:
-    - Repeat verification steps completed for the Footer on Home, About, Login and Register page.
+    - Repeat verification steps completed for the Footer on Home, About, Login and Register pages.
     - Confirm that the Footer is identical on all html pages.
 
-5.  Review all functionality and responsiveness on my mobile phone and tablet for the Profile Page and confirm that everything on this page is correct.
+5.  Review all functionality and responsiveness on my mobile phone and tablet for the Artists Page and confirm that everything on this page is correct.
 
 #### Artworks Detail Page 
 1.  Navigation bar:
@@ -197,7 +197,7 @@ This is a complete account of the testing process for the site from start to fin
 
 #### Bag Page 
 1.  Navigation bar:
-    - Repeat the verification steps completed for the previous html page.
+    - Repeat the verification steps completed for the previous html pages.
     - Confirm that the Navbar is identical on all html pages.
 
 2. Shopping Bag:
@@ -214,12 +214,14 @@ This is a complete account of the testing process for the site from start to fin
 
 #### Checkout Page 
 1.  Navigation bar:
-    - Repeat the verification steps completed for the previous html page.
+    - Repeat the verification steps completed for the previous html pages.
     - Confirm that the Navbar is identical on all html pages.
 
 2. Checkout Form:
     - Reduce and expand the width of the window to verify that the checkout form works and centres the way expected, that it looks good on all device widths and that the font color and size is appropriate.
-    - Confirm validation is working correctly for every form input field.
+    - Confirm validation is working correctly for every form input field, and that the country field is working. 
+    - Confirm that create account and login buttons below form inputs are working.
+    - Check that validation for card number is correct and that Stripe functionality is connected.
     - Confirm when user clicks complete order that spinner shows, and that a toast message confirms that the purchase has been made and that they also receive an email confirming same.
 
 3.  Footer:
@@ -237,7 +239,7 @@ This is a complete account of the testing process for the site from start to fin
     - Confirm that the jumbotron text section and the call to action button below are correctly appearing on screen and is fully responsive when the width of the window is reduced to mobile size.
 
 3.  Cards:
-    - Confirm that the twelve artist cards are correctly spaced on screen and are fully responsive.
+    - Confirm that the twelve artist cards are correctly spaced on screen and are fully responsive when amended to tablet and mobile view.
 
 4.  Footer:
     - Repeat verification steps completed for the Footer on previous pages.
@@ -246,13 +248,15 @@ This is a complete account of the testing process for the site from start to fin
 5.  Review all functionality and responsiveness on my mobile phone and tablet for the Artists Page and confirm that everything on this page is correct.
 
 #### SuperUser
+- When logged in as SuperUser, navigate to the Product Management link.
+
 1.  Navigation bar:
     - Repeat the verification steps completed for the Navbar on previous html pages.
     - Confirm that the Navbar is identical on all html pages.
 
 2.  Form: 
     - Confirm validation is working correctly for every form input field.
-    - Confirm when superuser clicks image and add product buttons (when form is completed), that everything works.
+    - Confirm when superuser clicks image and add product buttons (when form is completed), that everything works and a new product is created in the artworks page.
 
 3.  Buttons:
     - Confirm superuser can edit and delete products on artworks page.
@@ -266,7 +270,7 @@ This is a complete account of the testing process for the site from start to fin
 #### Additional HTML Pages
 
 - Logout: Confirm that clicking the Logout link works.
-- Error Pages: Confirm that 404 and 500 error html pages are correctly written (html has been validated). When user reaches the 404 and 500 page they see the heading "Something went wrong" and can click the Return to Home Page button as an option. Confirm that images below "Something went wrong" text are responsive and that alt tags are attached. I reviewed all the functionality and responsiveness on my mobile phone and tablet for the 404 page and confirmed that everything on this page is correct.  
+- Error Pages: Confirm that 404 and 500 error html pages are correctly written (html has been validated). When user reaches the 404 and 500 page they see the heading "Something went wrong" and can click the Return to Home Page button as an option. I reviewed all the functionality and responsiveness on my mobile phone and tablet for the 404 page and confirmed that everything on this page is correct.  
 
 ## Further Testing
 
