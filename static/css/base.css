@@ -243,7 +243,7 @@ input[name='q']::placeholder {
 /* The media queries detailed below are similar to the css media queries for the Boutique Ado tutorials, 
    as I coded along with the tutorials while developing my website and the structure of my website on 
    mobile is similar so I adopted similar styling to ensure that the design was clean. I did however 
-   amend the colour styling etc to match my project. - see Code Credits  
+   amend the colour styling and pixel heights etc. to customise the code for my project. - see Code Credits */  
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
