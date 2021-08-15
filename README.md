@@ -72,12 +72,16 @@ imported correctly. I used this font because I liked its structure, easy to read
 ### Imagery
 - The imagery within the website is very focused upon the artworks that the site is selling. The home page has a large background image featuring a very colourful oil painting on a white canvas, which immediately captures the attention of the user. The About and Artists pages feature cards with images of the management team of Young Irish Artists and the artists represented in the site, and these give the user a visual representation of who these people are. The artworks page itself includes cards with images of the artworks so users can choose the style and design of what they wish to purchase, and there is a feature where the user can click into the artwork to see a full screen image (which opens in a new tab) and study it more carefully. Examples of images from the site are detailed below; 
 
+Home Page:
 ![homepage](https://user-images.githubusercontent.com/71781554/129009918-c8f547e5-0cba-4a9b-b4d3-fcf1876bad8a.png)
 
+Artists:
 ![artists](https://user-images.githubusercontent.com/71781554/129009728-9808bf0b-c27b-469a-82fe-cf5629d0d0f8.png)
 
+Artwork Prints:
 ![artworks1](https://user-images.githubusercontent.com/71781554/129009737-0c8dac48-4d0d-42c0-a064-bfd0b0b36e29.png)
 
+Team Members:
 ![team](https://user-images.githubusercontent.com/71781554/129009739-02c79674-f17d-4579-8c28-7955fa2f74ce.png)
 
 
@@ -111,7 +115,7 @@ imported correctly. I used this font because I liked its structure, easy to read
 
 ## Database Design
 
-For the project I set up 7 database Models which you can see in the image below. I have also highlighted the relationships between the various models. I studied five models contained in the tutorial videos and updated, expanded and amended them to suit the requirements of an ecommerce art store, while I also added two fully custom models (Team and Artists), with fully custom python code. 
+For the project I set up 7 database Models which you can see in the image below. I have also highlighted the relationships between the various models. I studied five models contained in the tutorial videos and updated, expanded and amended them to suit the requirements of an ecommerce art store, while I also added two fully custom models (Team and Artists), with fully customised python code. 
 
 ### Database 
 
@@ -156,9 +160,10 @@ I created this project using Github, and wrote all of my code in Gitpod. I commi
 
 For this project you need to create a Stripe account for the checkout module, as well as an AWS account in order to store the static and media files (including all of the artwork, team and artists images).
 
-This project can be ran locally by completing the following steps. Note: I used Gitpod for development, so the following steps will be specific to Gitpod, but you can adjust them depending on your IDE. 
+This project can be run locally by completing the following steps:
+(Note: I used Gitpod for development, so the following steps will be specific to Gitpod, but you can adjust them depending on your IDE). 
 
-To clone the project:
+To clone the project you must complete the following steps:
 
 1. From the application's repository, click the "code" button and download the zip of the repository. Alternatively, you can also clone the repository using the following command in your terminal:
 
@@ -232,7 +237,7 @@ USE_AWS = "True"
 
 ``` 
 DATABASES = {
-    'default': dj_database_url.parse('Put your DATABASE_URL here'))
+    'default': dj_database_url.parse(os.environ.get('Put your DATABASE_URL here'))
 } 
 
 ```
