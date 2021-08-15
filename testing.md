@@ -85,7 +85,7 @@ This is a complete account of the testing process for the site from start to fin
 1.  Navigation bar:
     - Go to the "Home" page from a desktop.
     - Amend the screen size from desktop to tablet (e.g. iPad) to verify that the navigation bar is fully responsive and switches from the inline menu to the hamburger icon dropdown menu at the appropriate place on the left of the navbar, with search, my account and bag icons visible.
-    - When checking the responsiveness of navbar, verify that there is no overflow and that all of the items are in their correct places. 
+    - When checking the responsiveness of the navbar, verify that there is no overflow and that all of the items are in their correct places. 
     - Click on the Young Irish Artists logo in the left section of the navigation bar and verify that it links correctly to the Home page.
     - Click on every navigation menu item (Home, About, Artworks, Art Styles, Artists and Specials) and verify that they link to the correct page, and confirm that FontAwesome icons are working.
     - Hover over the main links and verify the hover underline feature works as expected.
@@ -180,7 +180,7 @@ This is a complete account of the testing process for the site from start to fin
 
 5.  Review all functionality and responsiveness on my mobile phone and tablet for the Artists Page and confirm that everything on this page is correct.
 
-#### Artworks Detail Page 
+#### Artworks Details Page 
 1.  Navigation bar:
     - Repeat the verification steps completed for the Navbar on Home, About, Artworks, Login and Register page.
     - Confirm that the Navbar is identical on all html pages.

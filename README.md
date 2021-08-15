@@ -31,7 +31,7 @@
 
 [View the Live Website Here](https://jhroche-young-irish-artists.herokuapp.com/)
 
-This project comprises the development of a fictional ecommerce website where users can purchase prints by exciting new artists based in Ireland working in a range of painting styles. The website also provides a helpful platform for recently graduated artists to gain exposure and recognition of their recent work thus improving their profile in the Irish art world. The website allows the user to create a profile when they are making a purchase so that they have an account through which they can see their history of previous purchases and load their billing and shipping information in order to make future orders easier. There is also a superuser profile for the site administrator through which products can be amended through CRUD (Create, Read, Update and Delete) functionality. In respect of the overall construction of this website, it has been designed to be fully responsive, intuitive and accessible on a range of media devices (e.g. mobile, tablet and desktop), in order to make it as easy as possible for users of the website to navigate it and make their required purchases.   
+This project comprises the development of a fictional ecommerce website where users can purchase prints by exciting new artists based in Ireland working in a range of painting styles. The website also provides a helpful platform for recently graduated artists to gain exposure and recognition of their recent work thus improving their profile in the Irish art world. The website allows the user to create a profile when they are making a purchase so that they have an account through which they can see their history of previous purchases and load their billing and shipping information in order to make future orders easier. There is also a superuser profile for the site administrator through which artworks can be amended through CRUD (Create, Read, Update and Delete) functionality. In respect of the overall construction of this website, it has been designed to be fully responsive, intuitive and accessible on a range of media devices (e.g. mobile, tablet and desktop), in order to make it as easy as possible for users of the website to navigate it and make their required purchases.   
 
 Photo of Site Represented on Various Media to highlight responsive design:
 
@@ -127,7 +127,7 @@ For the project I set up 7 database Models which you can see in the image below.
 
 ### Frameworks and Libraries and Programs Used
 
-1. [Bootstrap 4](https://getbootstrap.com/): Bootstrap was utilised to assist with the responsiveness and styling of the website, specifically in respect of the Artists, Products and About pages.
+1. [Bootstrap 4](https://getbootstrap.com/): Bootstrap was utilised to assist with the responsiveness and styling of the website, specifically in respect of the Artists, Artworks and About pages.
 2. [jQuery](https://jquery.com/): jQuery was used to assist with the bag, checkout and payment system functionality.
 3. [Google Fonts](https://fonts.google.com/): Google fonts was utilised to import the ‘Roboto’ font into the style.css file and this font is used on all pages throughout the website.
 4. [Font Awesome](https://fontawesome.com/): Font Awesome was utilised in the Home, About and Artists pages, as well as in the footer, for aesthetic and UX purposes. I matched the icons with the activity 
@@ -182,7 +182,7 @@ os.environ["STRIPE_PUBLIC_KEY"] = "STRIPE_PUBLIC_KEY"
 os.environ["STRIPE_SECRET_KEY"] = "STRIPE_SECRET_KEY"
 os.environ["STRIPE_WH_SECRET"] = "STRIPE_WH_SECRET"
 ```
-If you're not sure how to get the above Stripe variables, please visit the Stripe Documentation for guidance. 
+If you are not sure how to get the above Stripe variables, please visit the Stripe Documentation for guidance. 
 
 Also, if you are planning to push this application to a public repository, please ensure that env.py is added to your .gitignore file.
 
@@ -247,7 +247,7 @@ DATABASES = {
 
 Note: Do not forget to login to the admin page and check the boxes 'Verified and Primary"
 
-8. Load the data into your newly created database. I added all of my database items manually, as I had only created a few examples in the SQLite database, but I could load the new items into a json file for you to load.
+8. Load the data into your newly created database. I added all of my database items manually, as I had only created a few examples in the SQLite database, but I could load the new items into a json file which would be available for use.
 
 9. After migrations are complete, change the database configurations to:
 ```
@@ -263,7 +263,7 @@ Note: Do not forget to login to the admin page and check the boxes 'Verified and
             }
         }
 ```
-This set up will allow your site to use Postgres in deployment and sqlite3 in development.
+This set up will allow your site to use Postgres in deployment and SQLite in development.
 
 1. Make sure that you have your requirements.txt file and your Procfile. 
 In case you do not have them set up, follow the below steps: 
@@ -311,7 +311,7 @@ git push
 - Go to your email account and go to your account settings.
 - Under Security, scroll down to Signing in to Google and make sure that the 2 step verification functionality is turned on.
 - Under the same heading (Signing in to Google) you will see the 'App Passwords' option.
-- Click on the option, select mail for the app and under device type select other and fill in 'Django'.
+- Click on the option, select mail for the app and under device type select 'other' and fill in 'Django'.
 - You will now receive a password which you should copy and set it as a Config Variable in Heroku:
 ```
     EMAIL_HOST_PASS = 'Password you just copied'
@@ -343,7 +343,7 @@ git push
 - I studied a comment by Ed B_alum on Code Institute's Slack channel in respect of resolving an issue I had when trying to login to Heroku through the CLI before launching my Heroku app. 
 - On the recommendation of my tutor, I studied Anouk Smet's MS4 Readme (Casa Pedra Nobre), in respect of its structure and layout, especially in respect of the deployment section. 
 - I used the Bootstrap Library throughout the project to make the site more responsive through using the Bootstrap Grid System and employing Bootstrap elements for the Navbar, Footer, Jumbotron and Cards.
-- I studied in detail the videos and code for the Code Institute Django Project (Boutique Ado) presented by Chris Zielinski while completing my website, in order to get a clear understanding of how the various elements of Django, Stripe and AWS work, and how to implement a fully functioning Django website. While studying the structure of Chris' site, I at all time tried to use my own ideas, styling and custom models, while completing the coding in order to create my art ecommerce website. I followed Chris's code closely in respect of the Stripe payments section, as I had not encountered this functionality previously on the course.  
+- I studied in detail the videos and code for the Code Institute Django Project (Boutique Ado) presented by Chris Zielinski while completing my website, in order to get a clear understanding of how the various elements of Django, Stripe and AWS work, and how to implement a fully functioning Django website. While studying the structure of Chris' site, I at all time tried to use my own ideas, styling and custom models, while completing the coding in order to create my art ecommerce website. I followed Chris's code closely in respect of the checkout and Stripe payments section, as I had not encountered this functionality previously on the course.  
 
 
 ### Content
