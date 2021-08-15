@@ -31,7 +31,7 @@
 
 - I tested and added comments to every HTML, CSS, Javascript file (JSHint) and every Python file (Pep8Online) in the project to ensure everything about my code was in order and clean, and my review of same is detailed in the list below;
 
-![filereview](https://user-images.githubusercontent.com/71781554/129359202-362e7f2a-a5a4-4f50-ad5e-195ebbe29f23.png)
+![review](https://user-images.githubusercontent.com/71781554/129474724-00480e4f-aa30-4675-92e2-3b3ae3f780f8.png)
 
 
 - In order to confirm that the site has very good accessibility, I ensured that alt tags were added to all images. The site scored an accessibility score of 100 in the Google Lighthouse review (see Further Testing section below). 
