@@ -152,15 +152,15 @@ quicker.
 
 ### How to Run This Project Locally
 
-I have created the project using Github, from there I used Gitpod to write my code. Then I used commits to git followed by "git push" to my GitHub repository. I've deployed this project to Heroku and used "git push heroku master" to make sure my pushes to GitHub were also made to Heroku.
+I created this project using Github, and wrote all of my code in Gitpod. I committed my code regularly to my Github repository, and after deploying the project to Heroku, I updated Heroku to complete automatic updates.
 
-For this project you need to create an account on Stripe for the reservation module as well as an account on AWS in order to store your static and media files.
+For this project you need to create a Stripe account for the checkout module, as well as an AWS account in order to store the static and media files (including all of the artwork, team and artists images).
 
-This project can be ran locally by following the following steps: I used Gitpod for development, so the following steps will be specific to Gitpod. You will need to adjust them depending on your IDE. You can find more information about installing packages using pip and virtual environments here
+This project can be ran locally by completing the following steps. Note: I used Gitpod for development, so the following steps will be specific to Gitpod, but you can adjust them depending on your IDE. 
 
 To clone the project:
 
-1. From the application's repository, click the "code" button and download the zip of the repository. Alternatively, you can clone the repository using the following line in your terminal:
+1. From the application's repository, click the "code" button and download the zip of the repository. Alternatively, you can also clone the repository using the following command in your terminal:
 
 ```git clone https://github.com/JHR1986/johnhenryroche-ms4-youngirishartists.git```
 
@@ -168,7 +168,7 @@ To clone the project:
 
 ```pip3 install -r requirements.txt```
 
-3. In your IDE, create a file containing your environmental variables called env.py at the root level of the application. It will need to contain the following lines and variables:
+3. In your IDE, create a file called env.py which contains your environmental variables at the root level of the application. It will need to contain the following lines and variables:
 
 ``` 
 import os
@@ -181,35 +181,36 @@ os.environ["DEFAULT_FROM_EMAIL"] = 'DEFAULT_FROM_EMAIL'
 os.environ["STRIPE_PUBLIC_KEY"] = "STRIPE_PUBLIC_KEY"
 os.environ["STRIPE_SECRET_KEY"] = "STRIPE_SECRET_KEY"
 os.environ["STRIPE_WH_SECRET"] = "STRIPE_WH_SECRET"
-os.environ["STRIPE_CURRENCY"] = "EUR"
 ```
-If you're not sure how to get the above Stripe variables, please visit the Stripe Documentation
+If you're not sure how to get the above Stripe variables, please visit the Stripe Documentation for guidance. 
 
-If you plan on pushing this application to a public repository, ensure that env.py is added to your .gitignore file.
+Also, if you are planning to push this application to a public repository, please ensure that env.py is added to your .gitignore file.
 
-4. Migrate the database models with the following command: ```python3 manage.py migrate```
+4. Migrate the database models with the following terminal command: 
 
-5. Create a superuser and set up the credentials with the following command: ```python3 manage.py createsuperuser```
+```python3 manage.py migrate```
 
-6. Run the app with the following command: ```python manage.py runserver```
+5. Create a superuser account and set up your credentials with the following command: 
 
-The address to access the website is displayed in the terminal
-Add /admin to the end to access the admin panel with your superuser credentials.
+```python3 manage.py createsuperuser```
+
+6. Run the app with the following command: 
+
+```python manage.py runserver```
+
+The address to access the website will then be displayed in the terminal. You can then add /admin to the end of the url to access the admin panel with your superuser credentials.
 
 ### Heroku Deployment
 
-1. Login to your Heroku account and create a new app. Choose your region.
+1. Login to your Heroku account and create a new app. You can then choose your region (I used Europe).
 
-2. Once the app is created click on the resources button and under Add-ons, look for the Heroku Postgres to attach a postgres database to your project. Select the Hobby Dev - Free plan and click 'Submit order form'.
+2. Once the app is created, click on the Resources button and under Add-ons, look for the Heroku Postgres to attach a postgres database to your project, as the SQLite database that was originally used will no longer be used for the deployed version. Select the Hobby Dev - Free plan and click 'Submit Order Form'.
 
-3. Scroll back up and click "settings". Scroll down and click "Reveal config vars". Set up the same variables as in your env.py (): !You shouldn't set the DEBUG variable in under config vars, only in your env.py to prevent DEBUG being active on live website.
+3. Scroll back up the page and click "settings". Scroll down and click "Reveal Config Vars". Then set up the same variables as in your env.py (as detailed below). Note: You should not set the DEBUG variable in config vars in Heroku in order to prevent DEBUG being active on the live website.
 
 ```
 AWS_ACCESS_KEY_ID = "AWS_ACCESS_KEY_ID"
 AWS_SECRET_ACCESS_KEY = "AWS_SECRET_ACCESS_KEY"
-AWS_S3_REGION_NAME = "AWS_S3_REGION_NAME"
-AWS_STORAGE_BUCKET_NAME = "AWS_STORAGE_BUCKET_NAME"
-USE_AWS = True
 
 DATABASE_URL = "This variable is automatically set when adding the Postgres Add on"
 
@@ -218,19 +219,16 @@ SECRET_KEY = "SECRET_KEY"
 STRIPE_PUBLIC_KEY = "STRIPE_PUBLIC_KEY"
 STRIPE_SECRET_KEY = "STRIPE_SECRET_KEY"
 STRIPE_WH_SECRET = "STRIPE_WH_SECRET"
-STRIPE_CURRENCY = EUR
 
 DEFAULT_FROM_EMAIL = "DEFAULT_FROM_EMAIL"
-EMAIL_HOST = "smtp.gmail.com"
 EMAIL_HOST_PASS = "EMAIL_HOST_PASS"
 EMAIL_HOST_USER = "EMAIL_HOST_USER"
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
+USE_AWS = "True"
 ```
 
-4. From this screen, copy the value of DATABASE_URL
+4. From this screen, copy the value of DATABASE_URL.
 
-5. After this go to your settings.py the young_irish_artists directory and comment out the default database configuration and add:
+5. After this, go to your settings.py file to the young_irish_artists directory and comment out the default database configuration and add:
 
 ``` 
 DATABASES = {
@@ -243,15 +241,15 @@ DATABASES = {
 
 ```python3 manage.py migrate```
 
-7. Create a superuser for the postgres database so you can have access to the django admin by setting up the credentials with the following command:
+7. Create a superuser account for the postgres database, so that you can have access to the django admin section by setting up the credentials with the following command:
 
 ```python3 manage.py createsuperuser```
 
---> Don't forget to login to the admin page and check the boxes 'Verified and primary"
+Note: Do not forget to login to the admin page and check the boxes 'Verified and Primary"
 
-8. Load the data into your newly created database. I added my items manually, so that would be the option.
+8. Load the data into your newly created database. I added all of my database items manually, as I had only created a few examples in the SQLite database, but I could load the new items into a json file for you to load.
 
-9. After migrations are complete, change database configurations to:
+9. After migrations are complete, change the database configurations to:
 ```
     if 'DATABASE_URL' in os.environ:
         DATABASES = {
@@ -267,16 +265,20 @@ DATABASES = {
 ```
 This set up will allow your site to use Postgres in deployment and sqlite3 in development.
 
-1. Make sure you have your requirements.txt file and your Procfile. 
-In case you don't, follow the below steps: 
-``` Requirements: pip3 freeze --local > requirements.txt ```
-``` Procfile: echo web: python app.py > Procfile ```
+1. Make sure that you have your requirements.txt file and your Procfile. 
+In case you do not have them set up, follow the below steps: 
 
-2. The Procfile should contain the following line:
+Requirements:
+``` pip3 freeze --local > requirements.txt ```
+
+Procfile:
+``` echo web: python app.py > Procfile ```
+
+2. The Procfile should contain the following line so that it knows which program to run:
 
 ``` web: gunicorn <project_name>.wsgi:application ```
 
-3. Add your files and commit them to GITHUB by running the following commands:
+3. Add your files and commit them to Github by running the following commands:
 
 ```
 git add . 
@@ -284,40 +286,38 @@ git commit -m "Your commit message"
 git push
 ```
 
-4. Add your Heroku app URL to ALLOWED_HOSTS in your settings.py file
+4. Add your Heroku app URL to ALLOWED_HOSTS in your settings.py file.
 
-5. Disable collect static so that Heroku doesn't try to collect static files when you deploy by typing the following command in the terminal
+5. Disable collect static so that Heroku does not try to collect static files when you deploy by typing the following command in the terminal;
 
 ``` heroku config:set DISABLE_COLLECTSTATIC=1 ```
 
-6. Go back to HEROKU and click "Deploy" in the navigation.
+6. Go back to Heroku and click "Deploy" in the navigation.
 
 7. Scroll down to Deployment method and Select Github.
 
-8. Look for your repository and click connect.
+8. Look for your repository (Young Irish Artists) and click connect.
 
-9. Under automatic deploys, click 'Enable automatic deploys'
+9. Under the automatic deploys section, click 'Enable automatic deploys'.
 
 10. Just beneath, click "Deploy branch". Heroku will now start building the app. When the build is complete, click "view app" to open it.
 
-11. In order to commit your changes to the branch, use git push to push your changes.
+11. In order to commit your changes to the branch, use Git Push to push your changes to Github and Heroku.
 
-12. Store your static files and media files on AWS. You can find more information about this on Amazon S3 Documentation. If you would like to follow a tutorial instead, visit this tutorial on Youtube from Amazon Web Services
+12. Store your static files and media files in AWS.
 
-13. Set up email service to send confirmation email and user verification email to the users. You can do this by following the next steps (Gmail only)
+13. Set up your email service to send confirmation emails and user verification emails to the users of the site when they register and make a purchase. You can do this process by following the next steps (this process is for Gmail accounts only);
 
-(Be aware that this migth be different for other providers or the process might have changed over time)
-
-- Go to your email account and go to your account settings
-- Under Security, scroll down to Signing in to Google and make sure 2 step verification is turned on
-- Under the same heading (Signing in to Google) you will see the 'App passwords' option.
-- Click on the option, select mail for the app and under device type select other and fill in 'Django'
-- You will now get a password which you should copy and set it as a config variable in Heroku:
+- Go to your email account and go to your account settings.
+- Under Security, scroll down to Signing in to Google and make sure that the 2 step verification functionality is turned on.
+- Under the same heading (Signing in to Google) you will see the 'App Passwords' option.
+- Click on the option, select mail for the app and under device type select other and fill in 'Django'.
+- You will now receive a password which you should copy and set it as a Config Variable in Heroku:
 ```
     EMAIL_HOST_PASS = 'Password you just copied'
-    EMAIL_HOST_USER = 'Your gmail account
+    EMAIL_HOST_USER = 'Your gmail account'
 ```
-- Go to your settings.py in young irish artists directory and add the following:
+- Go to your settings.py in the Young Irish Artists directory and add the following:
 ```
     if "DEVELOPMENT" in os.environ:
         EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
@@ -331,6 +331,8 @@ git push
         EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
         DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL')
 ```
+- Your email functionality has now been set up.
+
 ## Testing
 
 - Testing information for this project can be found in the separate Testing File [here](testing.md). 
