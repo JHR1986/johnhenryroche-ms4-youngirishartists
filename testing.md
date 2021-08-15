@@ -286,6 +286,8 @@ This is a complete account of the testing process for the site from start to fin
 
 - Responsiveness: The website was viewed on a variety of devices such as Desktop, iPad and iPhone6. All formats were in order with no sections out of line or overlapping.
 
+- I followed a Test Driven Development approach for the project, including testing views for the site pages, testing the AWS functionality and testing Stripe and Stripe webhooks through print statements. I demonstrated this Test Driven Development approach through regular git commits. 
+
 - I completed a large amount of detailed testing to ensure that all links and email functionality were working correctly and that external links opened (as detailed in Manual Testing section above), and was happy that there were no broken links. This involved going into every page of the site and clicking every link/button that is available to a user and admin superuser (as part of their journey through the site) to ensure that everything was fully functional. 
 
 - I checked the console in Devtools and confirmed that there were no error reports in respect of any of the pages.
