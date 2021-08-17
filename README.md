@@ -102,9 +102,9 @@ Team Members:
     - Art Styles Page: A main jumbotron section and cards below detailing the artworks on offer in respect of a certain style of art.
     - Specials Page: A main jumbotron section and cards below detailing the special offers on sale in respect of the artworks.
     - Artworks Detail Page: When an artworks is selected, a prominent image of the artwork with details and buttons to add the item to bag, increase quantity or keep shopping.
-    - Shopping Bag Page: Details of the item to be purhased, as well as the cost information, and buttons to keep shopping or to continue to secure checkout.
+    - Shopping Bag Page: Details of the item to be purchased, as well as the cost information, and buttons to keep shopping or to continue to secure checkout.
     - Checkout Page: Form to the be filled out (with information already populated if logged in) in respect of address and card number, and details of the purchase. 
-    - Success Page: Confirmation page that product has been purhcased, which confirms that email has been sent to user and details of purchaser are clearly listed.
+    - Success Page: Confirmation page that product has been purchased, which confirms that email has been sent to user and details of purchaser are clearly listed.
     - Artists Page: A main jumbotron artists section containing a link to the Artworks page, and 12 cards below detailing the artists represented by Young Irish Artists with their names and education information (college, graduation year).
     - Register Page: Form to be filled out in order to be registered, with two buttons allowing user to go back to login or to register.
     - Allauth Pages: Allauth has various pages relating to email verification, logout etc.
