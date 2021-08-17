@@ -90,7 +90,7 @@ Team Members:
 - In review, the wireframes stayed generally consistent with the finished design, however I did add jumbotron sections into several pages of the website, in order to provide more information to the user and to provide a button in order to keep the user returning to the artworks page, and in several places positioning and spacing of buttons, navigation links etc. also changed. 
 - While building my website, I also prepared user stories (based on the structure of the User Stories prepared for the tutorial project), to examine how the user would progress through my site, and this is detailed in the chart below;
 
-![userstories](https://user-images.githubusercontent.com/71781554/129447399-74086a1e-6408-4196-ac94-e6c4e17e5d8e.png)
+![userreview](https://user-images.githubusercontent.com/71781554/129694455-709f0c3e-1a9e-419d-b35f-8dbeda4926bc.png)
 
 ## Features
 - The website is responsive on all device sizes (and has been tested through Chrome Dev Tools on various devices including iPhone 6/7/8, iPhone X, Galaxy S5, iPad and Desktop).
