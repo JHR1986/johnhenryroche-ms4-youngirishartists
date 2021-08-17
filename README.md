@@ -109,6 +109,7 @@ Team Members:
     - Register Page: Form to be filled out in order to be registered, with two buttons allowing user to go back to login or to register.
     - Allauth Pages: Allauth has various pages relating to email verification, logout etc.
     - Login Page: Username and Password to be filled out in order login, with two buttons allowing user to go back to home page or to login.
+    - My Profile Page: A page which details the user's autosaved delivery information and their previous order history.
     - 404 Error Page: A page with a heading "404 Error", a confirmation statement and link back to the homepage. 
     - 500 Error Page: A page with a heading "500 Error", a confirmation statement and link back to the homepage.
 - Future features that could be considered for the website to expand its capability would be to implement a comment section in respect of the artworks and to include a monthly blog or newsletter email to users in respect of new artworks that have been recently added to the site. 

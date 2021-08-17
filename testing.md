@@ -20,6 +20,7 @@
     + [Bag Page](#bag-page)
     + [Checkout Page](#checkout-page)
     + [Artists Page](#artists-page)
+    + [Profile Page](#profile-page)
     + [SuperUser](#superuser)
     + [Additional HTML Pages](#additional-html-pages)
 - [Further Testing](#further-testing)
@@ -250,6 +251,24 @@ This is a complete account of the testing process for the site from start to fin
 
 5.  Review all functionality and responsiveness on my mobile phone and tablet for the Artists Page and confirm that everything on this page is correct.
 
+#### Profile Page
+- When logged in, navigate to the My Profile link.
+
+1.  Navigation bar:
+    - Repeat the verification steps completed for the Navbar on previous html pages.
+    - Confirm that the Navbar is identical on all html pages.
+
+2.  Form: 
+    - Confirm that default delivery information has been autopopulated if this option was selected when making the previous purchase.
+    - Confirm that the Order History is detailed alongside the delivery information and can be accessed.
+    - Check that the delivery information can be updated if required by amending the form fields and clicking the Update Information button.
+
+3.  Footer:
+    - Repeat verification steps completed for the Footer on previous pages.
+    - Confirm that the Footer is identical on all html pages.
+
+4.  Review all functionality and responsiveness on my mobile phone and tablet for the Profile Page and confirm that everything on this page is correct.
+
 #### SuperUser
 - When logged in as SuperUser, navigate to the Product Management link.
 
@@ -268,7 +287,7 @@ This is a complete account of the testing process for the site from start to fin
     - Repeat verification steps completed for the Footer on previous pages.
     - Confirm that the Footer is identical on all html pages.
 
-5.  Review all functionality and responsiveness on my mobile phone and tablet for the SuperUser Pages and confirm that everything on this page is correct.
+5.  Review all functionality and responsiveness on my mobile phone and tablet for the SuperUser Page and confirm that everything on this page is correct.
 
 #### Additional HTML Pages
 
